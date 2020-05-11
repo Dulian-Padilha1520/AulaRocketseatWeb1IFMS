@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>
+            Casa Criativa!
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <section id="intro">
+                <header>
+                    <Img src="transferir.png" alt="Imagem da Logomarca">
+                </header>
+                <main>
+                    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+                    <p>Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas </strong>e tudo o que for necessário para tornar esse momento mais interessante.</p>
+                    <p>Comece clicando em <a href="" class="as">ver ideias</a> para ver as ideias cadastradas e contribua <a href="" class="as">adicionando a sua ideia</a>.</p>
+                </main>
+                <section id="buttons">
+                    <button onclick="onOff()">+ Adicionar Ideias</button>
+                    <button id="fat"><a href="ideias.html" class="ver">Ver Ideias</a></button>
+                </section>
+                <footer>Com ❤ <a href="https://www.facebook.com/dulian.padilha?ref=bookmarks">Dulian Padilha</a></footer>
+            </section>
+            <section id="last-ideias">
+                <div class="ideias">
+                    <img src="https://image.flaticon.com/icons/svg/2885/2885548.svg" alt="Imagem de Curso de Programação">
+                    <div class="content">
+                        <h3>Cursos de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum, tempora distinctio reprehenderit minima magni assumenda labore eos earum. Repellendus accusantium tempora consequatur atque culpa expedita reprehenderit, nobis ea assumenda!
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
+                    </div>
+                </div>
+                <div class="ideias">
+                    <img src="https://image.flaticon.com/icons/svg/2885/2885534.svg" alt="Imagem Pasta Alternativa de Fotos">
+                    <div class="content">
+                        <h3>Pasta de Alternativa de Fotos</h3>
+                        <p>Entretenimento</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum, tempora distinctio reprehenderit minima magni assumenda labore eos earum. Repellendus accusantium tempora consequatur atque culpa expedita reprehenderit, nobis ea assumenda!
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
+                    </div>
+                </div>
+                <div class="ideias">
+                    <img src="https://image.flaticon.com/icons/svg/2885/2885427.svg" alt="Imagem de Árvore Genealógica">
+                    <div class="content">
+                        <h3>Árvore Genealógica</h3>
+                        <p>Conhecimento</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rerum, tempora distinctio reprehenderit minima magni assumenda labore eos earum. Repellendus accusantium tempora consequatur atque culpa expedita reprehenderit, nobis ea assumenda!
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+                <form action="" method="get">
+                    <div class="input-wrapper">
+                        <label for="title">Título da Ideia:</label>
+                        <input type="text" name="title">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="category">Categoria:</label>
+                        <input type="text" name="category">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="image">Link da Imagem:</label>
+                        <input type="url" name="image">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descrição para essa ideia:</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="link">Link da Ideia:</label>
+                        <input type="url" name="link">
+                    </div>
+                    <button id="back"><a href="#" onclick="onOff()" class="volte">Voltar</a></button>
+                    <button>Salvar</button>
+                </form>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.hideScroll{
+    overflow: hidden;
+}
+p{
+    font-size: 18px;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+button{
+    border: none;
+    font-weight: bold;
+    background: none;
+    color: blueviolet;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    text-decoration: underline;
+}
+#fat{
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px 0;
+    box-shadow: 4px 5px 16px black;
+}
+#fat:hover{
+    background-color: palegreen;
+}
+.ver{
+    color: white;
+}
+button#fat:hover{
+    text-decoration: none;
+}
+#footer a{
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777;
+}
+footer a{
+    opacity: 0.8;
+}
+#buttons{
+    text-align: center;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+.as{
+    text-decoration: none;
+}
+#container{
+    width: 90%;
+    max-width: 880px;
+    margin: 80px auto;
+    display: flex;
+}
+#intro{
+    width: 300px;
+    margin-right: 20px;
+}
+main{
+    margin: 32px 0;
+}
+footer a:hover{
+    color: aqua;
+    font-weight: bold;
+}
+.ideias{
+    display: flex;
+    margin-bottom: 32px;
+    background-color: aliceblue;
+    border: 2px solid blueviolet;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px -8px black;
+}
+.ideias img{
+    width: 200px;
+    height: 200px;
+    margin-right: 32px;
+}
+.ideias h3{
+    margin: 0;
+}
+.ideias p{
+    margin: 8px 0;
+    color: gray;
+}
+.ideias .description{
+    margin: 16px 0;
+}
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+#modal{
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+#modal.addScroll{
+    overflow: auto;
+}
+#modal .content{
+    margin-top: 15% ;
+    color: white;
+}
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.content form{
+    width: 80%;
+    margin: 0 auto 15%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
+.content form div:nth-child(4){
+    grid-column: span 2;
+}
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+form button{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+form button:hover{
+    background-color: darkcyan;
+    color: white;
+    text-decoration: none;
+}
+#modal.hide{
+    opacity: 0.9;
+    visibility: hidden;
+}
+#back{
+    background-color: white;
+    cursor: pointer;
+    grid-column: 1;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    justify-self: end;
+    align-self: end;
+    border-radius: 6px;
+    transition: 400ms;
+}
+#back:hover{
+    background-color: darkcyan;
+    text-decoration: none;
+}
+.volte:hover{
+    color: white;
+}
+/* ideias.html */
+#page-ideias #container{
+    display: block;
+}
+#page-ideias header{
+    display: flex;
+    justify-content: space-between;
+}
+#page-ideias nav{
+    display: flex;
+    align-items: center;
+}
+#page-ideias nav li{
+    list-style-type: none;
+    margin-right: 16px;
+}
+#page-ideias nav li:last-child{
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 0;
+    box-shadow: 4px 5px 16px black;
+}
+#page-ideias nav li:last-child:hover{
+    background-color: palegreen;
+}
+#page-ideias nav li:last-child a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+#page-ideias section#title{
+    text-align: center;
+    margin: 64px 0;
+}
+#page-ideias section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+#page-ideias section#title h1{
+    margin: 0;
+    font-size: 28px;
+}
+#page-ideias section#ideias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#page-ideias section#ideias{
+    margin: 0;
+}
